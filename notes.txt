@@ -1,0 +1,110 @@
+4 modes in vim
+
+normal - esc
+insert - i 
+command - :
+visual - v
+
+
+hjkl - for navigation
+h left
+j down
+k up
+l right
+
+wbe - word by word navigation
+w - navigate forward word by word start letter of the word
+b - navigate backward word by word start letter of the word
+e - navigate forward word by word end letter of the word
+
+$0^ - line by line navigation
+$ - move to the end of line 
+0 - move to the beggining of the line
+^ - move to first non-empty character in a line
+
+fF - find by find navigation
+f - search find next occurence
+F - search find previous occurence
+
+marking positions bookmarks 
+m a - mark a position as A 
+` a - to comeback to that position from any place
+
+vim has so many pre- defined bookmarks 2 are below
+`` - toggle between last two visited positions
+`. - toggle to the last edited position from anywhere.
+
+(){} - sentence/para navigation
+() - snetence up and down
+{} - paragraph up and down
+
+ctrl D and ctrl U 
+D - half page down
+U - half page up
+
+ctrl F and ctrl B 
+F - full page down 
+B - full page up
+
+start and end of page
+gg - start of the page 
+G - end of the page
+
+iIaA - editing in line
+i - insert mode before cursor
+I - insert mode at the start of the line
+a - insert mode after the cursor
+A - insert mode at the end of the line 
+
+oO - add stuff in new lines before and after
+o - insert mode in a fresh newline after line
+O - insert mode in a fresh newline before line
+
+c and s (c + motions)
+c - replace a word
+ciw Change the entire word where the cursor is on.
+cw: Changes the current word from cursor position.
+cl: Deletes the entire line and puts you in insert mode at the beginning of the line.
+c$ Deletes all text from the cursor to the end of the line and enters insert mode.
+s - replace a character and enter into edit mode
+
+y and p for copy paste (y + motions)
+yy - copy a line 
+p - paste after the cursor position
+P - paste before the cursor position
+
+copy text between {}, (), [] using
+y i {  without including brace
+y a {  with including brace
+
+. is a repeat operation/action command
+
+xr - delete/replace stuff in command mode
+x - delete the character where the cursor is on
+r - replace the character where the cursor is on
+
+dd - delete a line
+d i w - delete a word 
+d i s - delete a sentence
+d i p - delete a paragraph
+d t (particular character) - to delete until a particular character
+
+u - for undo
+ctrl + r for redo
+
+in normal mode 
+/ word - to search for occurences of the word
+n - to move forward in instances of the slash search word
+N to move backward in instances of the slash search word
+
+* - to search for instances of word under the cursor forwards
+# - to search for instance of word under the cursor backwards
+
+:set number
+:number
+
+:w - save
+:q - quit
+:q! - quit by discarding changes
+:wq - save and quit
+:!terminal command - run terminal commands with an ! mark
